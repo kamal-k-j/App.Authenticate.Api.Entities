@@ -15,7 +15,10 @@ namespace App.Authenticate.Api.Entities.Request
         public string Email { get; set; }
 
         [Required]
-        public string Password { get; set; }
+        public string PasswordHash { get; set; }
+
+        [Required]
+        public string HashSalt { get; set; }
 
         [Required]
         public DateTime DateOfBirth { get; set; }
